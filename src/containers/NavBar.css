@@ -1,0 +1,26 @@
+.NavBar{
+    width: 100%;
+    background-color: #FFCC00;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+}
+.Image {
+    margin: 5px 0 0 37px;
+    padding: 0;
+}
+.List{
+    grid-column: 1fr;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li {
+    float: left;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    padding: 28px 25px 0 0;
+}

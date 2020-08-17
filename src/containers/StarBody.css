@@ -1,0 +1,45 @@
+.StartBody {
+    display: grid;
+    background-image: url('../images/homebackground.png');
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    display: grid;
+    position: relative;
+}
+.Welcome {
+    padding: 100px 0 0 100px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.win {
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    padding: 0 0 0 100px;
+    font-family: 'Poppins', sans-serif;
+}
+.body-btn {
+    text-align: left;
+    padding: 8px 0 8px 20px;
+    border: solid 1px transparent;
+    background-color: #FFCC00;
+    width: 160px;
+    outline: none;
+    font-weight: bold;
+    margin: 30px 0 0 100px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.fachevron {
+    /* margin: 0 0 0 0; */
+    position: absolute;
+    padding: 3px 0 0 20px;
+}
+.low {
+    background-color: #FFCC00;
+    height: 140px;
+    margin-top: -90px;
+}
