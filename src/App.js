@@ -1,16 +1,30 @@
 import React from 'react'
-// import './css/reset.css'
-
-import StartBody from './containers/StartBody'
-import NavBar from './containers/NavBar'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import './App.css'
+import HomePage from './components/HomePage'
+import About from './components/About'
+import DashBoard from './components/Dashboard'
+import User from './components/User'
 
 function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <StartBody />
-    </div>
-  );
+
+  return (      
+        <Router>
+          <div className="App">
+            <Switch>
+              <Route path="/" exact component={HomePage} />
+              <Route path="/about" exact component={About} />
+              <Route path="/dashboard" exact component={DashBoard} />
+              <Route path="/user/:username" exact component={User} />
+              {/* <Route path="/user" exact render={({match}) => (
+                  <User username="match.params.username"/>
+              )
+              } /> */}
+            </Switch>
+          </div>
+        </Router>
+  )
 }
+
 
 export default App;

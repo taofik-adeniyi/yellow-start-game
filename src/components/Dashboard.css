@@ -1,0 +1,88 @@
+.container {
+  display: grid;
+  grid-template-columns: 9% 91%;
+  background-color: blue;
+}
+.sidebar {
+  height: 100vh;
+  background: #000000;
+  color: #FFFFFF;
+}
+.nav-items {
+  position: fixed;
+  width: 9%;
+  background-color: #000000;
+  height: 100vh;
+}
+.items {
+  padding: 11px;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.cor {
+  background-color: #FFCC00;
+}
+.mtn-logo {
+  width: 70px;
+  height: 70px;
+  margin: 30px 0 30px 20px;
+}
+.main-content {
+  background-color: #FFCC00;
+  word-wrap: break-word;
+  height: 100vh;
+}
+.home-container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.first-row {
+  /* border: 1px solid palegreen; */
+  height: 150px;
+}
+.display-name {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 35px 0 0 40px;
+  font-family: 'Poppins', sans-serif;
+}
+.display-time {
+  font-weight: bold;
+  margin: -35px 0 0 290px;
+}
+.display-dp {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: -50px 0 0 90%;
+}
+.second-row {
+  width: 700px;
+  height: 150px;
+  border: 1px solid green;
+}
+.wide-card-heading {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 200px;
+  height: 100px;
+  background-color: #FFFFFF;
+}
+.third-row {
+  width: 800px;
+  height: 150px;
+  border: 1px solid blue;
+}
+.fourth-row{
+  width: 900px;
+  height: 100px;
+  border: 1px solid red;
+}
+.artiste {
+  width: 90px;
+  height: 60px;
+  border: 1px solid greenyellow;
+  margin: 5px;
+}
