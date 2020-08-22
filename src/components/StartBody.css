@@ -85,6 +85,13 @@
     font-family: 'Poppins', sans-serif;
     border: solid 1px transparent;
 }
+@media (max-width: 450px) {
+    .modal {
+        width: 90%;
+        height: 300px;
+        padding: 10px;
+    }
+}
 .circle-icon {
     margin: 20px auto 10px auto;
     height: 40px;
