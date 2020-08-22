@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { FaChevronRight, FaInfoCircle } from 'react-icons/fa'
-import { useFormik } from 'formik'
+// import { useFormik } from 'formik'
 import { useHistory } from 'react-router-dom'
 
 function NickNameForm(props) {
 
     let history = useHistory()
 
-    const Formik = useFormik({})
+    // const Formik = useFormik({})
     
     const [nickName, setNickName] = useState('')
 

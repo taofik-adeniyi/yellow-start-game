@@ -1,27 +1,45 @@
-.StartBody {
-    display: grid;
+.start-body {
+    /* display: grid; */
     background-image: url('../images/homebackground.png');
-    background-repeat: no-repeat, repeat;
-    background-position: center;
+    /* background-repeat: no-repeat, repeat; */
+    /* background-position: center; */
     background-size: cover;
-    height: 650px;
-    display: grid;
+    /* grid-area: startbody; */
+    height: 790px;
+    /* display: grid; */
     position: relative;
+    background-color: #FFCC00;
+    z-index: 100;
+    width: 100%;
 }
-.Welcome {
+@media (max-width: 450px) {
+    .start-body {
+        font-size: 10px;
+        background-image: url('../images/home-mobile-background.png');
+        /* background-size: cover; */
+        background-position: center;
+    }
+}
+/* .logo-bg {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+} */
+.welcome {
     padding: 100px 0 0 100px;
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 35px;
     font-family: 'Poppins', sans-serif;
 }
-.win {
-    padding: 0;
+.motto {
+    padding: 5px 0 0 100px;
     margin: 0;
     color: #FFFFFF;
-    padding: 0 0 0 100px;
+    /* padding: 0 0 0 100px; */
     font-family: 'Poppins', sans-serif;
 }
-.body-btn {
+.get-started-btn {
     text-align: left;
     padding: 8px 0 8px 20px;
     border: solid 1px transparent;
@@ -34,6 +52,20 @@
     font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
+@media (max-width: 450px) {
+    .welcome {
+        padding: 100px 20px 0 20px;
+        font-size: 30px;
+    }
+    .motto {
+        padding: 10px 20px 0 20px;
+        font-size: 18px;
+    }
+    .get-started-btn {
+        margin: 30px 0 0 20px;
+    }
+}
+
 .fachevron {
     /* margin: 0 0 0 0; */
     position: absolute;
@@ -44,7 +76,7 @@
     height: 140px;
     margin-top: -110px;
 }
-.Modal {
+.modal {
     margin: 13% auto;
     width: 550px;
     position: relative;
@@ -54,25 +86,25 @@
     font-family: 'Poppins', sans-serif;
     border: solid 1px transparent;
 }
-.circleIcon {
+.circle-icon {
     margin: 20px auto 10px auto;
     height: 40px;
     width: 40px;
     color: #FFCC00;
 }
-.detectNumber {
+.detect-number {
     font-family: 'Poppins', sans-serif;
 }
-.coverNum {
+.cover-number {
     letter-spacing: 2px;
 }
-.postNum {
+.post-number {
     color: #ccc;
 }
-.Number {
+.number {
     color: #FFCC00;
 }
-.getNick {
+.get-nick {
     width: 350px;
     height: 35px;
     text-align: center;

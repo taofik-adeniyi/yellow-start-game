@@ -3,6 +3,8 @@ import './StartBody.css'
 import Modal from 'react-modal'
 import NickNameForm from './NickNameForm'
 import { FaChevronRight } from 'react-icons/fa'
+import logobg from '../images/homebackground.png'
+
 
 Modal.setAppElement('#root')
 function StartBody() {
@@ -11,35 +13,28 @@ function StartBody() {
     
     
     return (
-        <>
-            <div className="StartBody">
-                <div>
-                    <h1 className="Welcome">
-                        Welcome to the YelloStarShow Games
-                    </h1>
-                    <p className="win">
-                        Win amazing prices by participating in the Games
-                    </p>
-                    <div>
-                    <button className="body-btn" onClick={ () => setModalIsOpen(true) }>
-                        Get Started 
-                        
-                        <FaChevronRight className="fachevron" />
-                        
-                    </button></div>
+            <div className="start-body">
+                {/* <img src={logobg} alt="logobg" className="logo-bg" /> */}
+                <div className="welcome">
+                    Welcome to the YelloStarShow Games
                 </div>
+                <div className="motto">
+                    Win amazing prices by participating in the Games
+                </div>
+                {/* <button>Name Here</button> */}
+                <button className="get-started-btn" onClick={ () => setModalIsOpen(true) }>
+                    Get Started 
+                    <FaChevronRight className="fachevron" />
+                </button>
                 <Modal 
                     isOpen={modalIsOpen} 
                     shouldCloseOnOverlayClick={false} 
                     onRequestClose={() => setModalIsOpen(false)}
-                    className="Modal"
+                    className="modal"
                 >
                   <NickNameForm />
                 </Modal>
             </div>
-            <div className="low">
-            </div>
-        </>
     )
 }
 

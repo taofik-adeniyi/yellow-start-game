@@ -5,17 +5,10 @@ import { Link } from 'react-router-dom'
 
 function NavBar() {
     return (
-        <div className="NavBar">
+        <div className="nav-bar">
             <Link to="/">
-                <img src={logo} alt="YelloStarLogo" className="Image"  />
+                <img src={logo} alt="YelloStarLogo" className="image"  />
             </Link>
-            <div className="List">
-                <ul>
-                    <li>How to Play</li>
-                    <li>Leaderboard</li>
-                    <li>Help & Support</li>
-                </ul>
-            </div>
         </div>
     )
 }
