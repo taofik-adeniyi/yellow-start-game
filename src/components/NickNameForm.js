@@ -35,7 +35,7 @@ function NickNameForm(props) {
             </h2>
             
             <label htmlFor="nickName"><h3>Enter your Nickname</h3></label>
-            <input type="text" id="nickName" name="nickName" value={nickName} onChange={handleNickNameChange} placeholder="NoahAdams" className="getNick" />
+            <input type="text" id="nickName" name="nickName" value={nickName} onChange={handleNickNameChange} placeholder="NoahAdams" className="get-nick" />
         
             <div>
                 <button className="proceed" type="submit">
