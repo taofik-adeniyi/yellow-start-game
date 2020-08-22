@@ -9,7 +9,6 @@
     /* display: grid; */
     position: relative;
     background-color: #FFCC00;
-    z-index: 100;
     width: 100%;
 }
 @media (max-width: 450px) {
