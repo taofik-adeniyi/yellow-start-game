@@ -27,8 +27,7 @@ function StartBody() {
                     <FaChevronRight className="fachevron" />
                 </button>
                 <Modal 
-                    isOpen={modalIsOpen} 
-                    shouldCloseOnOverlayClick={false} 
+                    isOpen={modalIsOpen}  
                     onRequestClose={() => setModalIsOpen(false)}
                     className="modal"
                 >
