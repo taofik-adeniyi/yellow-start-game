@@ -1,0 +1,106 @@
+.side-bar-logo {
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.my-side-bar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.my-side-bar li {
+    font-size: 15px;
+    padding: 15px 10px 15px 10px;
+    position: relative;
+    /* border: 1px solid red; */
+    margin-right: 5px;
+}
+.my-side-bar ul {
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.3s;
+    left: 100%;
+    top: -2%;
+}
+.my-side-bar li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    z-index: 10000;
+    background-color: brown;
+}
+.my-side-bar li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+}
+.my-icons {
+    margin-left: 15px;
+}
+.nest-sidebar-hamburger {
+    display: none;
+}
+@media screen and (max-width: 450px) {
+    .my-side-bar {
+        display: none;
+    }
+    .side-bar-logo {
+        margin: 10px 0 0 30px;
+        /* display: none; */
+    }
+    .nest-sidebar-hamburger {
+        display: inline-block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        margin: 45px 0 0 100px;
+        transform: translate(-5%, -50%);
+        z-index: 3;
+    }
+    .nest-line {
+        width: 30px;
+        height: 3px;
+        background: #FFFFFF;
+        margin: 5px;
+    }
+    .my-side-bar {
+        list-style: none;
+        margin: 0;
+    }
+    .my-side-bar li {
+        padding: 15px;
+        position: relative;
+        width: 200px;
+        /* background-color: lightblue; */
+        /* border-top: 1px solid blue; */
+        /* border-right: 5px solid purple; */
+    }
+    .my-side-bar ul {
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        transition: all 0.3s;
+        left: 100%;
+        top: -2%;
+    }
+    .my-side-bar li {
+        width: 60px;
+    }
+    .my-side-bar li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        text-align: center;
+    }
+    .my-side-bar li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        text-align: center;
+        /* padding-left: -10px; */
+    }
+    .my-icons {
+        margin-left: 15px;
+    }    
+}

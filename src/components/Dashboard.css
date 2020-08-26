@@ -1,248 +1,249 @@
-.container {
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: blueviolet; */
+}
+.nest-wrapper {
   display: grid;
-  grid-template-columns: 9% 91%;
-  background-color: blue;
-}
-.sidebar {
-  height: 100vh;
-  background: #000000;
-  color: #FFFFFF;
-}
-.nav-items {
-  position: fixed;
-  width: 9%;
-  background-color: #000000;
-  height: 100vh;
-}
-.items {
-  padding: 11px;
-  font-size: 13px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  cursor: pointer;
-}
-.cor {
-  background-color: #FFCC00;
-}
-.mtn-logo {
-  width: 70px;
-  height: 70px;
-  margin: 30px 0 30px 20px;
-}
-.main-content {
-  background-color: #FFCC00;
-  word-wrap: break-word;
-  height: 100vh;
-}
-.first-container{
-  min-height: 350px;
-  background-color: #FFCC00;
-  border-radius: 0% 0% 50% 50% / 0% 0% 22% 22% ;
-  display: grid;
-  grid-template-rows: 90px 100px;
-  grid-template-columns: 31% 23% 23% 23%;
+  grid-template-columns: 7% 93%;
+  /* height: 100vh; */
   grid-template-areas: 
-  "fbox1 fbox1 fbox1 fbox1"
-  "fbox2 fbox3 fbox4 fbox5";
-  position: relative;
+  "nestsidebar maincontainer"
+  ;
 }
-.display-name {
-  position: absolute;
-  margin: 40px 0 0 30px;
-  font-size: 40px;
-  font-weight: bold;
-}
-.display-time {
-  position: absolute;
-  margin: 65px 0 0 260px;
-  font-size: 18px;
-  font-weight: bold;
-}
-.logo1 {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  margin: 35px 0 0 1000px;
-}
-.fbox1{
-  grid-area: fbox1;
-}
-.fbox2 {
-  grid-area: fbox2;
-}
-.cover-one {
-  background-color: #FFFFFF;
-  margin: 10px 5px 5px 20px;
-  height: 190px;
-  border-radius: 15px;
-}
-.my-points {
-  padding: 8px 0 0 20px;
-  position: absolute;
-  font-family: 'Poppins', sans-serif;
-}
-.doughnut {
-  border: 5px groove blue;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 40px 0 0 20px;
-  position: absolute;
-}
-.non-one {
-  padding: 20px 20px 0 30px;
-  font-weight: bold;
-  font-size: 22px;
-  font-family: 'Poppins', sans-serif;
-  position: absolute;
-}
-.pts {
-  position: absolute;
-  padding: 48px 0 0 35px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
-}
-.list-holder {
-  /* border: 1px solid blue; */
-  height: 200px;
-  width: 150px;
-  position: absolute;
-  margin-left: 140px;
-}
-.fbox3 {
-  grid-area: fbox3;
-}
-.cover-two {
-  background-color: #FFFFFF;
-  margin: 10px 5px 5px 5px;
-  height: 190px;
-  border-radius: 15px;
-}
-.fbox4 {
-  grid-area: fbox4;
-}
-.fbox5 {
-  grid-area: fbox5;
-}
-.second-container {
-  z-index: -2000;
-  margin-top: -75px;
-  min-height: 350px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-areas: "sbox1 sbox1 sbox1 sbox1"
-                        "sbox2 sbox3 sbox4 sbox5";
-}
-.sbox1{
-  background-color: #e5e5e5;
-  grid-area: sbox1;
-}
-.favorite {
-  position: absolute;
-  margin: 80px 0 0 0;
-  font-size: 25px;
-  font-weight: bold;
-  padding: 0 0 0 30px;
-}
-.view-contestants {
-  position: absolute;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 90px 0 0 180px;
-}
-.quiz {
-  position: absolute;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 90px 0 0 850px;
-}
-.sbox2 {
-  background-color: #e5e5e5;
-  grid-area: sbox2;
-  margin-top: -70px;
-}
-.card {
-  width: 200px;
-  height: 250px;
-  background-color: #FFFFFF;
-  margin: 10px 5px 30px 20px;
-  border-radius: 5px;
-}
-/* .card-games {
-  background-color: aqua;
-  background-size: contain;
-  border: 1px solid red;
-  background: ;
-  background: url('../images/predictiongames.png') no-repeat;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  width: 200px;
-  height: 250px;
-  border-radius: 5px;
-  margin: 10px 5px 30px 20px;
-} */
-.yourdiv {
-  width: 200px;
-  height: 250px;
-  border-radius: 5px;
+.nest-sidebar {
   background-color: #000000;
-  margin: 10px 5px 30px 20px;
+  grid-area: nestsidebar;
+  height: 100vh;
+  position: fixed;
+  width: 7%;
 }
-.lock {
-  text-align: center;
-  padding: 50px 0 0 10px;
-  color: #FFFFFF;
-  font-size: 22px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+.main-container {
+  display: grid;
+  grid-template-rows: 450px 1fr;
+  grid-area: maincontainer;
 }
-.locker {
-  width: 120px;
-  height: 35px;
-  margin: 30px 0 0 40px;
-  border-radius: 10px;
-  outline: none;
-  padding: 10px;
-  border: solid 1px transparent;
+.main-container-one {
+  height: 390px;
+  z-index: 2;
+  position: relative;
+  display: grid;
+  gap: 15px;
   background-color: #FFCC00;
+  grid-template-rows: 110px 190px;
+  grid-template-columns: 400px repeat(3, 1fr);
+  border-radius: 0% 0% 50% 50% / 0% 0% 22% 22% ;
+  grid-template-areas:
+  "nametimedp nametimedp nametimedp nametimedp"
+  "points contone conttwo contthree"
+  ;
+}
+.nametimedp {
+  grid-area: nametimedp;
+}
+.points {
+  grid-area: points;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.cont-one {
+  grid-area: contone;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.cont-two {
+  grid-area: conttwo;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.cont-three {
+  grid-area: contthree;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.main-container-two {
+  margin-top: -80px;
+  background-color: #E5E5E5;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: 
+  "favorite prediction"
+  ;
+}
+.favorite-section {
+  margin-top: 100px;
+  grid-area: favorite;
+  display: grid;
+  gap: 15px;
+  grid-template-rows: 50px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "head head head"
+  "artone arttwo artthree"
+  ;
+}
+.fav-sec-head {
+  /* background-color: lightblue; */
+  grid-area: head;
+  padding: 0 0 0 20px;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
-/* .yourdiv img {
-  width: 100%;
-  height: 250px;
-  position: absolute;
-} */
-.small-img {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  margin: 20px 0 0 10px;
+.view-contestant-head {
+  font-size: 13px;
+  color: green;
+  padding-left: 10px;
 }
-.koroko {
-  margin: 22px 0 0 90px;
-  position: absolute;
+.sub-box-one {
+  background-color: #FFFFFF;
+  margin-bottom: 50px;
+  margin-left: 20px;
+}
+.sub-box-two {
+  background-color: #FFFFFF;
+  margin-bottom: 50px;
+  grid-area: arttwo;
+}
+.sub-box-three {
+  background-color: #FFFFFF;
+  grid-area: artthree;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+.quiz-section {
+  grid-area: prediction;
+  margin-top: 100px;
+  display: grid;
+  gap: 15px;
+  grid-template-rows: 50px;
+  grid-template-areas: 
+  "qhead"
+  "qsub"
+  ;
+}
+.quiz-sec-one {
+  grid-area: qhead;
+  font-size: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: 17px;
 }
-.koroko-two {
-  font-family: 'Poppins', sans-serif;
-  font-size: 10px;
+.quiz-sec-two {
+  grid-area: qsub;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-size: cover;
+  background-image: url('../images/predictiongames.png');
 }
-.sbox3 {
-  background-color: #e5e5e5;
-  grid-area: sbox3;
-  margin-top: -70px;
+.predict-img {
+  width: 90%;
+  height: 300px;
 }
-.sbox4 {
-  background-color: #e5e5e5;
-  grid-area: sbox4;
-  margin-top: -70px;
-}
-.sbox5 {
-  background-color: #e5e5e5;
-  grid-area: sbox5;
-  margin-top: -70px;
+@media (max-width: 450px) {
+  .nest-wrapper {
+    grid-template-rows: 90px 500px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nestsidebar"
+    "maincontainer"
+    ;
+  }
+  .nest-sidebar {
+      grid-area: nestsidebar;
+      width: 100%;
+      position: relative;
+      height: 90px;
+  }
+  .main-container {
+      grid-area: maincontainer;
+  }
+  .main-container-one {
+      display: grid;
+      grid-template-rows: 50px 200px 200px 200px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "nametimedp nametimedp"
+      "points points"
+      "contone conttwo"
+      "contthree contthree"
+      ;
+      gap: 10px;
+  }
+  .nametimedp {
+      height: 100px;
+      grid-area: nametimedp;
+  }
+  .points {
+      grid-area: points;
+      background-color: #FFFFFF;
+      height: 180px;
+      margin-top: 45px;
+      margin-right: 10px;
+  }
+  .cont-one {
+      grid-area: contone;
+      background-color: #FFFFFF;
+      height: 150px;
+      margin-top: 50px;
+      margin-left: 10px;
+      border: 1px solid black;
+  }
+  .cont-two {
+      grid-area: conttwo;
+      background-color: #FFFFFF;
+      height: 150px;
+      margin-top: 50px;
+      margin-right: 10px;
+      border: 1px solid black;
+  }
+  .cont-three {
+      grid-area: contthree;
+      height: 250px;
+      margin-top: 20px;
+      margin-left: 10px;
+      border: 1px solid black;
+  }
+  .main-container-two {
+    background-color: £E5E5E5;
+    display: grid;
+    margin-top: 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "favorite"
+    "prediction"
+    ;
+  }
+  .favorite-section {
+    grid-area: favorite;
+    display: grid;
+    margin-right: 20px;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "head"
+    "artone"
+    ;
+  }
+  .sub-box-one {
+    background-color: #FFFFFF;
+    margin-bottom: 50px;
+    margin-left: 20px;
+  }
+  .sub-box-two {
+    display: none;
+  }
+  .sub-box-three {
+      display: none;
+  }
+  .quiz-section {
+    grid-area: prediction;
+    display: grid;
+    margin-top: 10px;
+  }
+  .quiz-sec-one {
+  padding: 0 0 0 20px;
+  }
 }

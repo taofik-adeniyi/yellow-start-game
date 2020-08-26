@@ -5,16 +5,14 @@ import { FaHeadphones, FaExclamationCircle } from 'react-icons/fa'
 function Footer() {
     return (
         <div className="footer">
-            {/* <div className="footer-btn-container"> */}
-                <button className="how-to-play">
-                    <FaExclamationCircle className="footer-icon" />
-                    How To Play
-                </button>
-                <button className="support">
-                    <FaHeadphones className="footer-icon" />
-                    Support
-                </button>
-            {/* </div> */}
+            <button className="how-to-play">
+                <FaExclamationCircle className="footer-icon" />
+                How To Play
+            </button>
+            <button className="support">
+                <FaHeadphones className="footer-icon" />
+                Support
+            </button>
         </div>
     )
 }

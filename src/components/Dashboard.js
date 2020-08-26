@@ -83,22 +83,20 @@ function UserDashboard() {
         }
 
     return(
-        <div className="container">
-            <SideBar 
-            gamesControl={handleGames} 
-            homeControl={handleHome}
-            leaderboardControl={handleLeaderboard}
-            helpControl={handleHelp}
-            profileControl={handleProfile}
-            />
-            <div className="main-content">
-                {homeComponent}
-                {gamesComponent}
-                {leaderboardComponent}
-                {helpComponent}
-                {profileComponent}
+        <div class="nest-wrapper">
+            <div className="nest-sidebar">
+                <SideBar 
+                    gamesControl={handleGames} 
+                    homeControl={handleHome}
+                    leaderboardControl={handleLeaderboard}
+                    helpControl={handleHelp}
+                    profileControl={handleProfile}
+                />
             </div>
+        <div class="main-container">
+            {homeComponent}
         </div>
+    </div>
     )
 }
 

@@ -1,0 +1,235 @@
+.ayodele {
+    /* margin-left: 100px; */
+    padding: 40px 0 0 30px;
+    font-size: 38px;
+    font-weight: bold;
+    /* position: relative; */
+    font-family: 'Poppins', sans-serif;
+}
+.time {
+    margin-left: 250px;
+    margin-top: -30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.home-dp {
+    margin-right: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-top: -50px;
+    position: relative;
+}
+.box-points {
+    border-radius: 10px;
+    /* border: 2px solid #000000; */
+    margin-left: 30px;
+    margin-right: 10px;
+    background-color: #FFFFFF;
+    width: 320px;
+    height: 150px;
+}
+.box-coins {
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    height: 150px;
+}
+.box-position {
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    height: 150px;
+}
+.box-countdown {
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    height: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+.my-points {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 20px;
+}
+.circlular {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 5px solid red;
+    margin-left: 20px;
+    padding: 10px 0 0 5px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    /* justify-content: space-around; */
+}
+.pts {
+    font-size: 15px;
+}
+.norm-ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: square;
+    position: absolute;
+    margin-top: -105px;
+    margin-left: 160px;
+    line-height: 35px;
+    font-size: 13px;
+}
+.coin-fav {
+    margin: 10px;
+}
+.coins-balance {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+}
+.coins-balance-no {
+    font-size: 30px;
+    padding-left: 20px;
+}
+.top-up {
+    padding-left: 20px;
+}
+.post {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.post-no {
+    font-size: 35px;
+    padding-left: 20px;
+    text-align: center;
+}
+.overall {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.view-lead {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.countdown-heading {
+    padding: 10px 0 0 20px;
+    font-size: 13px;
+}
+.time-counter {
+    font-size: 35px;
+    padding-top: 20px;
+}
+.predict-now {
+    padding-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.slider-img {
+    border: none;
+    margin: 10px 20px;
+}
+.slider-name {
+    position: absolute;
+    margin: -80px 0 10px 120px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.slider-cont-no {
+    color: #cccccc;
+    font-size: 13px;
+}
+.no-of-po {
+    padding-left: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.b-pts {
+    font-size: 14px;
+}
+.switch {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: red;
+    margin: -26px 0 0 190px;
+    position: absolute;
+}
+.boost {
+    padding-left: 20px;
+    color: green;
+    padding-bottom: 10px;
+}
+.art-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 20px 20px;
+}
+.art-ul li {
+    font-size: 14px;
+    line-height: 2em;
+    width: 70%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.art-ul li:nth-child(2n) {
+    background-color: lightsalmon;
+}
+.art-ul li a {
+    text-decoration: none;
+    padding: 5px 0 20px 0;
+    border-radius: 20px;
+    /* height: 10px; */
+}
+.yourdiv {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: #000000;
+  margin: 10px 5px 30px 20px;
+}
+.lock {
+  text-align: center;
+  padding: 50px 0 0 10px;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.locker {
+  width: 120px;
+  height: 35px;
+  margin: 30px 0 0 40px;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  border: solid 1px transparent;
+  background-color: #FFCC00;
+  font-weight: bold;
+}
+.highlight {
+    color: #FFFFFF;
+    margin-top: 35%;
+    font-size: 28px;
+    text-align: center;
+}
+.btn-highlight {
+    color: #000000;
+    background-color: #FFCC00;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0 20px 35%;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+@media screen and (max-width: 450px) {
+    
+}
