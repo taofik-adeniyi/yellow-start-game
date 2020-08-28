@@ -17,6 +17,7 @@ body {
   height: 100vh;
   position: fixed;
   width: 7%;
+  z-index: 20000;
 }
 .main-container {
   display: grid;
@@ -25,7 +26,7 @@ body {
 }
 .main-container-one {
   height: 390px;
-  z-index: 2;
+  /* z-index: 2; */
   position: relative;
   display: grid;
   gap: 15px;

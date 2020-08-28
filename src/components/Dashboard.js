@@ -93,10 +93,10 @@ function UserDashboard() {
                     profileControl={handleProfile}
                 />
             </div>
-        <div class="main-container">
-            {homeComponent}
+            <div class="main-container">
+                {homeComponent}
+            </div>
         </div>
-    </div>
     )
 }
 

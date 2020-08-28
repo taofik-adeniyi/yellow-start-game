@@ -1,0 +1,178 @@
+.body {
+    background-color: #e5e5e5;
+}
+.nest-wrapper {
+    display: grid;
+    grid-template-columns: 7% 93%;
+    /* height: 100vh; */
+    grid-template-areas: 
+    "nestsidebar maincontainer"
+    ;
+}
+.nest-sidebar {
+    background-color: #000000;
+    grid-area: nestsidebar;
+    height: 100vh;
+    position: fixed;
+    width: 7%;
+}
+.help-container {
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-area: maincontainer;
+}
+.help-con-one {
+    display: grid;
+    grid-template-rows: 150px 80px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "leadname leadname leadname leadname leadname"
+    "leadpoints leadcoinbal leadposition leadcountdown ."
+    ;
+}
+.help-name {
+    background-color: #FFCC00;
+    grid-area: leadname;
+    border-radius: 0% 0% 50% 50% / 0% 0% 22% 22% ;
+}
+.ayodele {
+    /* margin-left: 100px; */
+    padding: 40px 0 0 30px;
+    font-size: 38px;
+    font-weight: bold;
+    /* position: relative; */
+    font-family: 'Poppins', sans-serif;
+}
+.time {
+    margin-left: 250px;
+    margin-top: -30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.help-dp-con {
+    margin-right: 80px;
+    display: flex;
+    margin-left: auto;
+    margin-top: -70px;
+    position: relative;
+    float: right;
+}
+.help-dp {
+    width: 50px;
+    height: 50px;
+}
+.extra-marg {
+    margin-top: -70px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+.help-points {
+    grid-area: leadpoints;
+    margin-left: 30px;
+}
+.help-coin-bal {
+    grid-area: leadcoinbal;
+}
+.help-position {
+    grid-area: leadposition;
+}
+.help-countdown {
+    grid-area: leadcountdown;
+}
+.help-con-two {
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.help-con-two-one {
+    /* background-color: #FFCC00; */
+    margin-left: 30px;
+    width: 78%;
+}
+.help-con-two-two {
+    width: 78%;
+    margin-left: 30px;
+    /* background-color: aqua; */
+}
+.help-list {
+    margin: 20px auto;
+    /* background-color: blanchedalmond; */
+    width: 90%;
+}
+.help-list li {
+    list-style-type: none;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 10px;
+}
+.help-list-plus {
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.to-play {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    /* font-weight: bold; */
+    /* padding: 10px; */
+}
+.btn-mover {
+    position: relative;
+    float: right;
+    margin-left: auto;
+    display: flex;
+    margin-top: -30px;
+    font-family: 'Poppins', sans-serif;
+}
+.btn-mover button {
+    padding: 10px;
+    background-color: #FFCC00;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+#nums {
+    color: #cccccc;
+}
+#nums-post {
+    color: green;
+}
+#to-head {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#to-head-to {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.new-to {
+    color: green;
+}
+.little {
+    font-size: 13px;
+}
+.little-color {
+    color: #cccccc;
+}
+.tikin {
+    color: red;
+}
+.points-ul {
+    margin: 0;
+    padding: 5px 0 0 15px;
+    display: flex;
+    font-size: 13px;
+    list-style-type: square;
+}
+.points-ul li {
+    width: 60px;
+}

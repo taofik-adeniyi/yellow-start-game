@@ -25,7 +25,7 @@ function SideBar(props) {
                 </div>
                 <ul className="my-side-bar">
                     <li>
-                        <Link to="/">
+                        <Link to="/dashboard">
                             <FaHome color="white" size="25" className="my-icons" />
                             Home
                         </Link>
@@ -36,8 +36,9 @@ function SideBar(props) {
                             Games
                         </Link>
                         <ul>
+                        <div>
                             <li>
-                                <Link to="">
+                                <Link to="/predictgames">
                                 <FaHome color="white" size="25" />
                                 Prediction Game
                                 </Link>
@@ -47,8 +48,9 @@ function SideBar(props) {
                                 <FaHome color="white" size="25" />
                                 Play Quiz
                                 </Link>
-                            </li>
+                            </li></div>
                         </ul>
+                        
                     </li>
                     <li>
                         <Link to="/leaderboard">

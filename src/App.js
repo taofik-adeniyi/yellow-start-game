@@ -7,6 +7,7 @@ import DashBoard from './components/Dashboard'
 import Help from './components/Help'
 import Profile from './components/Profile'
 import LeaderBoard from './components/LeaderBoard'
+import PredictGames from './components/PredictGames'
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
               <Route path="/dashboard" exact component={DashBoard} />
               <Route path="/leaderboard" exact component={LeaderBoard} />
               <Route path="/help" exact component={Help} />
-              <Route path="/profile" exact component={Profile} />  
+              <Route path="/profile" exact component={Profile} />
+              <Route path="/predictgames" exact component={PredictGames} />  
             </Switch>
           </div>
         </Router>

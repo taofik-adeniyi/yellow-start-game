@@ -1,0 +1,160 @@
+.body {
+    background-color: #e5e5e5;
+}
+.nest-wrapper {
+    display: grid;
+    grid-template-columns: 7% 93%;
+    /* height: 100vh; */
+    grid-template-areas: 
+    "nestsidebar maincontainer"
+    ;
+}
+.nest-sidebar {
+    background-color: #000000;
+    grid-area: nestsidebar;
+    height: 100vh;
+    position: fixed;
+    width: 7%;
+}
+.lead-container {
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    grid-area: maincontainer;
+}
+.lead-con-one {
+    display: grid;
+    grid-template-rows: 150px 80px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "leadname leadname leadname leadname leadname"
+    "leadpoints leadcoinbal leadposition leadcountdown ."
+    ;
+}
+.lead-name {
+    background-color: #FFCC00;
+    grid-area: leadname;
+    border-radius: 0% 0% 50% 50% / 0% 0% 22% 22% ;
+}
+.ayodele {
+    /* margin-left: 100px; */
+    padding: 40px 0 0 30px;
+    font-size: 38px;
+    font-weight: bold;
+    /* position: relative; */
+    font-family: 'Poppins', sans-serif;
+}
+.time {
+    margin-left: 250px;
+    margin-top: -30px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.lead-dp-con {
+    margin-right: 80px;
+    display: flex;
+    margin-left: auto;
+    margin-top: -70px;
+    position: relative;
+    float: right;
+}
+.lead-dp {
+    width: 50px;
+    height: 50px;
+}
+.extra-marg {
+    margin-top: -70px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+.lead-points {
+    grid-area: leadpoints;
+    margin-left: 30px;
+}
+.lead-coin-bal {
+    grid-area: leadcoinbal;
+}
+.lead-position {
+    grid-area: leadposition;
+}
+.lead-countdown {
+    grid-area: leadcountdown;
+}
+.lead-con-two {
+    display: grid;
+    grid-template-rows: 50px auto;
+    grid-template-columns: repeat(5, 1fr);
+    /* gap: 20px; */
+    grid-template-areas: 
+    "leadtablehead leadtablehead leadtablehead leadtablehead ."
+    "leadtable leadtable leadtable leadtable ."
+    ;
+}
+.lead-table-head  {
+    /* background-color: lightskyblue; */
+    grid-area: leadtablehead;
+    margin-left: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.lead-table {
+    /* background-color: lightslategray; */
+    grid-area: leadtable;
+    margin-left: 30px;
+}
+table {
+    width: 100%;
+    outline: 0;
+    /* background-color: red; */
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+th,td {
+    padding: 5px 12px;
+}
+th {
+    background-color: #cccccc;
+}
+#nums {
+    color: #cccccc;
+}
+#nums-post {
+    color: green;
+}
+#to-head {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+#to-head-to {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+.new-to {
+    color: green;
+}
+.little {
+    font-size: 13px;
+}
+.little-color {
+    color: #cccccc;
+}
+.tikin {
+    color: red;
+}
+.points-ul {
+    margin: 0;
+    padding: 5px 0 0 15px;
+    display: flex;
+    font-size: 13px;
+    list-style-type: square;
+}
+.points-ul li {
+    width: 60px;
+}

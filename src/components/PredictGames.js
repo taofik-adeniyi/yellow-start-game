@@ -1,14 +1,16 @@
-import React, { useState} from 'react'
-import './Leaderboard.css'
-import SideBar from './SideBar'
+import React, { useState } from 'react'
+import './Dashboard.css'
 import Help from './Help'
+import LeaderBoard from './LeaderBoard'
 import Home from './Home'
 import Games from './Games'
 import Profile from './Profile'
-import logo1 from '../images/display-picture.png'
+import SideBar from './SideBar'
+import './PredictGames.css'
 import { FaAngleDown, FaChevronRight } from "react-icons/fa";
+import logo1 from '../images/display-picture.png'
 
-function LeaderBoard() {
+function PredictGames() {
 
     const [home, setHome] = useState('true')
 
@@ -82,7 +84,7 @@ function LeaderBoard() {
         }
 
     return (
-        <div className="nest-wrapper">
+        <div class="nest-wrapper">
             <div className="nest-sidebar">
                 <SideBar 
                     gamesControl={handleGames} 
@@ -92,17 +94,17 @@ function LeaderBoard() {
                     profileControl={handleProfile}
                 />
             </div>
-            <div className="lead-container">
-                <div className="lead-con-one">
-                    <div className="lead-name">
+            <div className="pg-container">
+                <div className="pg-con-one">
+                    <div className="pg-name">
                         <div className="ayodele">Hi Ayodele</div>
                         <h3 className="time">Tuesday, 12 May 2020</h3>
-                        <div className="lead-dp-con">
-                        <img src={logo1} alt="displayImage" className="lead-dp" />
+                        <div className="pg-dp-con">
+                        <img src={logo1} alt="displayImage" className="pg-dp" />
                         <FaAngleDown />
                         </div>
                     </div>
-                    <div className="lead-points extra-marg">
+                    <div className="pg-points extra-marg">
                         <div id="to-head">My Points</div>
                         <div id="to-head-to">115<span className="little">Pts</span></div>
                         <div>
@@ -113,60 +115,70 @@ function LeaderBoard() {
                             </ul>
                         </div>
                     </div>
-                    <div className="lead-coin-bal extra-marg">
+                    <div className="pg-coin-bal extra-marg">
                         <div id="to-head">Coins Balance</div>
                         <div id="to-head-to" className="new-to">5000</div>
                         <div>Top Up <FaChevronRight /></div>
                     </div>
-                    <div className="lead-position extra-marg">
+                    <div className="pg-position extra-marg">
                         <div id="to-head">Position</div>
                         <div id="to-head-to">115<span className="little little-color">th</span></div>
                         <div>View Leaderboard <FaChevronRight /></div>
                     </div>
-                    <div className="lead-countdown extra-marg">
+                    <div className="pg-countdown extra-marg">
                         <div id="to-head">Countdown to show</div>
                         <div id="to-head-to" className="tikin">0:20:00</div>
                         <div>Predict Now! <FaChevronRight /></div>
                     </div>
                 </div>
-                <div className="lead-con-two">
-                    <div className="lead-table-head">Leaderboard</div>
-                    <div className="lead-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Name</th>
-                                    <th>Location</th>
-                                    <th>Points</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td id="nums">1</td>
-                                    <td>Jane Cooper</td>
-                                    <td id="nums">Lagos</td>
-                                    <td id="nums-post">1136pt</td>
-                                </tr>
-                                <tr>
-                                    <td id="nums">2</td>
-                                    <td>Wade Warren</td>
-                                    <td id="nums">Lagos</td>
-                                    <td id="nums-post">1136pt</td>
-                                </tr><tr>
-                                    <td id="nums">3</td>
-                                    <td>Esther Howard</td>
-                                    <td id="nums">Lagos</td>
-                                    <td id="nums-post">1136pt</td>
-                                </tr>
-                                <tr>
-                                    <td id="nums">4</td>
-                                    <td>Cameroon Williamson</td>
-                                    <td id="nums">Lagos</td>
-                                    <td id="nums-post">1136pt</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div className="pg-con-two">
+                    <div className="pg-btn-con">
+                        <button>Nomination <FaChevronRight /></button>
+                        <button>Eviction <FaChevronRight /></button>
+                        <button>Music Choice <FaChevronRight /></button>
+                    </div>
+                    <div className="pg-sel-con">Select Contestant</div>
+                    <div className="pg-con-list">
+                        <div className="holder">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Asuquo</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
+                        <div className="holder">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Asuquo</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
+                        <div className="holder">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Asuquo</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
+                        <div className="holder">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Asuquo</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
+                        <div className="holder">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Asuquo</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
+                        <div className="holder">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Asuquo</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
+                        <div className="holder colored">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Cennai</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
+                        <div className="holder">
+                            <div className="img-holder"></div>
+                            <div className="name-holder">Asuquo</div>
+                            <div className="name-cont-holder">Contestant 13</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -174,4 +186,4 @@ function LeaderBoard() {
     )
 }
 
-export default LeaderBoard
+export default PredictGames
