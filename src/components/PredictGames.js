@@ -9,6 +9,10 @@ import SideBar from './SideBar'
 import './PredictGames.css'
 import { FaAngleDown, FaChevronRight } from "react-icons/fa";
 import logo1 from '../images/display-picture.png'
+import Modal from 'react-modal'
+import PredictMusic from './PredictMusic'
+import TopUpComp from './TopUpComp'
+import {Link} from 'react-router-dom'
 
 function PredictGames() {
 
@@ -21,6 +25,11 @@ function PredictGames() {
     const [games, setGames] = useState('false')
 
     const [profile, setProfile] = useState('false')
+
+    // const [predict, setPredict] = useState('false')
+
+    const [PopUpGames, setPopUpGames] = useState(false)
+    
 
     const handleHome = () => {
         setLeaderBoard('false')
@@ -62,6 +71,15 @@ function PredictGames() {
         setProfile('true')
     }
 
+    // const handlePredict = () => {
+    //     setHome('false')
+    //     setLeaderBoard('false')
+    //     setHelp('false')
+    //     setGames('false')
+    //     setProfile('false')
+    //     setPredict('true')
+    // }
+
     let homeComponent
         if (home === 'true'){
             homeComponent = <Home /> 
@@ -82,6 +100,10 @@ function PredictGames() {
         if(profile === 'true'){
             profileComponent = <Profile />
         }
+    // let predictComponent
+    // if(predict === 'true'){
+    //     profileComponent = <Profile />
+    // }
 
     return (
         <div class="nest-wrapper">
@@ -118,12 +140,12 @@ function PredictGames() {
                     <div className="pg-coin-bal extra-marg">
                         <div id="to-head">Coins Balance</div>
                         <div id="to-head-to" className="new-to">5000</div>
-                        <div>Top Up <FaChevronRight /></div>
+                        <TopUpComp />
                     </div>
                     <div className="pg-position extra-marg">
                         <div id="to-head">Position</div>
                         <div id="to-head-to">115<span className="little little-color">th</span></div>
-                        <div>View Leaderboard <FaChevronRight /></div>
+                        <Link to="/leaderboard">View Leaderboard<FaChevronRight /></Link>
                     </div>
                     <div className="pg-countdown extra-marg">
                         <div id="to-head">Countdown to show</div>
@@ -169,11 +191,21 @@ function PredictGames() {
                             <div className="name-holder">Asuquo</div>
                             <div className="name-cont-holder">Contestant 13</div>
                         </div>
-                        <div className="holder colored">
+                        <div className="holder colored" 
+                        onClick={() => setPopUpGames(true)}
+                        >
                             <div className="img-holder"></div>
                             <div className="name-holder">Cennai</div>
                             <div className="name-cont-holder">Contestant 13</div>
+                            
                         </div>
+                        <Modal 
+                                isOpen={PopUpGames}  
+                                onRequestClose={() => setPopUpGames(false)}
+                                className="modal"
+                            >
+                            <PredictMusic />
+                            </Modal>
                         <div className="holder">
                             <div className="img-holder"></div>
                             <div className="name-holder">Asuquo</div>

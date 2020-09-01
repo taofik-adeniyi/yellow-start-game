@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import {FaHome} from 'react-icons/fa'
 import mtnLogo from '../images/mtn-logo.svg'
 import { Link } from 'react-router-dom'
+import Modal from 'react-modal'
 import './Sidebar.css'
+import Quiz from './Quiz'
 
 function SideBar(props) {
 
-    // className={SideNavBar ? "my-side-bar" : "shownav"}    
-    
-    // const [SideNavBar, setSideNavBar] = useState('true')
+    const [showSideBarQuiz, setShowSideBarQuiz] = useState(false)
 
     return (
         <div>
@@ -36,19 +36,28 @@ function SideBar(props) {
                             Games
                         </Link>
                         <ul>
-                        <div>
-                            <li>
-                                <Link to="/predictgames">
-                                <FaHome color="white" size="25" />
-                                Prediction Game
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="">
-                                <FaHome color="white" size="25" />
-                                Play Quiz
-                                </Link>
-                            </li></div>
+                            <div>
+                                <li>
+                                    <Link to="/predictgames">
+                                    <FaHome color="white" size="25" />
+                                    Prediction Game
+                                    </Link>
+                                </li>
+                                <li>
+                                    <button 
+                                    onClick={() => setShowSideBarQuiz(true)}
+                                    >
+                                        <FaHome color="white" size="25" />
+                                        Play Quiz
+                                    </button>
+                                </li>
+                                <Modal 
+                                isOpen={showSideBarQuiz}  
+                                onRequestClose={() => setShowSideBarQuiz(false)}
+                                className="modal">
+                                    <Quiz />
+                                </Modal>
+                            </div>
                         </ul>
                         
                     </li>

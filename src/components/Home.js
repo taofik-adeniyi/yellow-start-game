@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo1 from '../images/display-picture.png'
 import logo2 from '../images/iyanya.png'
 import logo3 from '../images/omawunmi.png'
@@ -6,8 +6,17 @@ import logo4 from '../images/praiz.png'
 import logo5 from '../images/predictiongames.png'
 import './Home.css'
 import { FaCoins, FaChevronRight } from "react-icons/fa";
+import Modal from 'react-modal'
+import Quiz from './Quiz'
+import BoostPoints from './BoostPoints'
+import SwitchComp from './SwitchComp'
+import { Link } from 'react-router-dom'
+import TopUpComp from './TopUpComp'
 
 function Home() {
+
+    const [quizModalOpen, setQuizModalOpen] = useState(false)
+
     return (
         <div>
             <div class="main-container-one">
@@ -38,7 +47,7 @@ function Home() {
                         <FaCoins size="40" color="yellow" className="coin-fav" />
                         <div className="coins-balance">Coins balance</div>
                         <div className="coins-balance-no">5000</div>
-                        <div className="top-up">Top up<FaChevronRight /></div>
+                        <TopUpComp />
                     </div>
                 </div>
                 
@@ -47,7 +56,9 @@ function Home() {
                     <div className="post">Position</div>
                     <div className="post-no">115th</div>
                     <div className="overall">Overall</div>
-                    <div className="view-lead">View Leaderboard</div>
+                    <div className="view-lead">
+                        <Link to="/leaderboard">View Leaderboard<FaChevronRight /></Link>
+                    </div>
                     </div>
                 </div>
                 
@@ -92,8 +103,8 @@ function Home() {
                         <li><a href="">Performance (17pts)</a></li>
                     </ul>
                     <div className="no-of-po">115 <span className="b-pts">Pts</span></div>
-                    <div className="boost">Boost Points<FaChevronRight /></div>
-                    <div className="switch">Switch</div>
+                        <BoostPoints />
+                        <SwitchComp />
                 </div>
                 <div class="sub-box-two">
                     <div className="fav-artone">
@@ -113,8 +124,8 @@ function Home() {
                         <li><a href="">Performance (17pts)</a></li>
                     </ul>
                     <div className="no-of-po">115 <span className="b-pts">Pts</span></div>
-                    <div className="boost">Boost Points<FaChevronRight /></div>
-                    <div className="switch">Switch</div>
+                        <BoostPoints />
+                        <SwitchComp />
                 </div>
                 <div class="sub-box-three">
                     <div className="fav-artone">
@@ -131,13 +142,22 @@ function Home() {
                         <li><a href="">Performance (17pts)</a></li>
                     </ul>
                     <div className="no-of-po">115 <span className="b-pts">Pts</span></div>
-                    <div className="boost">Boost Points<FaChevronRight /></div>
-                    <div className="switch">Switch</div>
+                        <BoostPoints />
+                        <SwitchComp />
                 </div>
             </div>
             <div className="quiz-section">
                 <div className="quiz-sec-one">
-                    Play Quiz <FaChevronRight />
+                    <button 
+                    onClick={ () => setQuizModalOpen(true) }
+                    >Play Quiz <FaChevronRight /></button>
+                    <Modal 
+                    isOpen={quizModalOpen}  
+                    onRequestClose={() => setQuizModalOpen(false)}
+                    className="modal"
+                    >
+                  <Quiz />
+                </Modal>
                 </div>
                 <div className="quiz-sec-two">
                     <div className="highlight">Prediction <br />Games</div>

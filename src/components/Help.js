@@ -8,6 +8,8 @@ import Profile from './Profile'
 import LeaderBoard from './LeaderBoard'
 import logo1 from '../images/display-picture.png'
 import { FaAngleDown, FaChevronRight } from "react-icons/fa";
+import {Link} from 'react-router-dom'
+import TopUpComp from './TopUpComp'
 
 function Help() {
 
@@ -117,12 +119,14 @@ function Help() {
                 <div className="help-coin-bal extra-marg">
                     <div id="to-head">Coins Balance</div>
                     <div id="to-head-to" className="new-to">5000</div>
-                    <div>Top Up <FaChevronRight /></div>
+                    {/* <div>Top Up <FaChevronRight /></div> */}
+                    <TopUpComp />
                 </div>
                 <div className="help-position extra-marg">
                     <div id="to-head">Position</div>
                     <div id="to-head-to">115<span className="little little-color">th</span></div>
-                    <div>View Leaderboard <FaChevronRight /></div>
+                    {/* <div>View Leaderboard <FaChevronRight /></div> */}
+                    <Link to="/leaderboard">View Leaderboard <FaChevronRight /></Link>
                 </div>
                 <div className="help-countdown extra-marg">
                     <div id="to-head">Countdown to show</div>

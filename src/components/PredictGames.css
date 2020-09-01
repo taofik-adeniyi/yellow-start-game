@@ -129,6 +129,7 @@
 }
 .colored {
     background-color: #FFCC00;
+    cursor: pointer;
 }
 .img-holder {
     width: 60px;
