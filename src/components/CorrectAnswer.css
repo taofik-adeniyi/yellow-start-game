@@ -1,0 +1,29 @@
+.cancel {
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.right-icon {
+    color: green;
+    width: 45px;
+    height: 45px;
+}
+.right {
+    font-weight: bold;
+    font-size: 20px;
+    color: green;
+    padding-top: 5px;
+}
+.announce {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.next-con {
+    margin-top: 60px;
+}
+.awoof {
+    color: red;
+    font-size: 13px;
+    margin-top: 40px;
+}

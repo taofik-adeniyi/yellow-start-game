@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import './QuizQuestion.css'
-import { FaInfoCircle } from "react-icons/fa";
+// import { FaInfoCircle } from "react-icons/fa";
 import CorrectAnswer from './CorrectAnswer';
 import IncorrectAnswer from './IncorrectAnswer';
-
+import { BsStar, BsStarFill } from "react-icons/bs";
+import './QuizQuestion.css'
 
 function QuizQuestion() {
 
@@ -27,21 +28,30 @@ function QuizQuestion() {
     if(showForm === 'show')
     {
         return(
-            <form onSubmit={handleQuestionSubmit}>
-                <FaInfoCircle className="circleIcon" />
-                <h3 className="detectNumber">Quiz One</h3>
-                <h4>Where did Iyanaya (Contestant 1) grow up?</h4>
-                <select value={questionAnswer} onChange={questionAnswerChange}>
-                    <option value="Abeokuta">
-                        Abeokuta
-                    </option>
-                    <option value="Ilorin">
-                        Ilorin
-                    </option>
-                </select>
-                <button type="submit">Submit</button>
-                <div>You have 2 free Quizzes left for today</div> 
-            </form>
+            <div className="quiz-question">
+                <form onSubmit={handleQuestionSubmit}>
+                    <BsStarFill className="star-icon" />
+                    <div className="quiz-no">Quiz One</div>
+                    <div className="quiz-content">Where did Iyanaya (Contestant 1) grow up?</div>
+                    <div>
+                        <select className="select-element" value={questionAnswer} onChange={questionAnswerChange}>
+                            <option disabled selected className="option-element">
+                                Select Answer
+                            </option>
+                            <option className="option-element" value="Abeokuta">
+                                Abeokuta
+                            </option>
+                            <option className="option-element" value="Ilorin">
+                                Ilorin
+                            </option>
+                        </select>
+                    </div>
+                    <div className="submit-con">
+                        <button className="quiz-question-submit" type="submit">Submit</button>
+                    </div>
+                    <div className="awoof">*You have 2 free Quizzes left for today</div> 
+                </form>
+            </div>
         )
     }else if (showForm === 'correct'){
         return (

@@ -29,7 +29,7 @@ function StartBody() {
                 <Modal 
                     isOpen={modalIsOpen}  
                     onRequestClose={() => setModalIsOpen(false)}
-                    className="modal"
+                    className="modal-class"
                 >
                   <NickNameForm />
                 </Modal>

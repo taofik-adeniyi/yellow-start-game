@@ -1,0 +1,55 @@
+.double-boost {
+    width: 200px;
+    min-height: 130px;
+    background-color: #FFCC00;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 40px;
+}
+.triple-boost {
+    width: 200px;
+    min-height: 130px;
+    background-color: #cFcFcF;
+    border-radius: 10px;
+    margin: 0 0 0 300px;
+}
+.bonus-cancel-icon {
+    float: right;
+    padding: 10px 20px 0 0;
+    width: 30px;
+    height: 30px;
+    /* position: absolute; */
+}
+.black-icon {
+    padding-top: 20px;
+}
+.yellow-icon {
+    padding-top: 20px;
+}
+.booster {
+    font-weight: bold;
+    padding: 5px;
+}
+.price {
+    color: red;
+}
+.cost {
+    font-size: 13px;
+}
+.boost-cont {
+    margin: 30px 0 30px 0;
+}
+.boostin-btn {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #FFCC00;
+    min-width: 100px;
+}
+.oya-text {
+    font-size: 22px;
+    padding: 20px 0 20px 0;
+    font-weight: bold;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Modal from 'react-modal'
+import './SwitchComp.css'
 import AvailableContestant from './AvailableContestant'
 
 function SwicthComp (props) {
@@ -19,9 +20,9 @@ function SwicthComp (props) {
             <Modal 
                 isOpen={modalOpen}  
                 onRequestClose={() => setModalOpen(false)}
-                className="modal"
+                className="switch-modal"
             >
-                <AvailableContestant />
+                <AvailableContestant toCloseModal={modalOpen} />
             </Modal>
         </div>
     )

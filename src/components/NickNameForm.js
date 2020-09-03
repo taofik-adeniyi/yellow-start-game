@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { FaChevronRight, FaInfoCircle } from 'react-icons/fa'
-// import { useFormik } from 'formik'
 import { useHistory } from 'react-router-dom'
 
 function NickNameForm(props) {
 
     let history = useHistory()
 
-    // const Formik = useFormik({})
     
     const [nickName, setNickName] = useState('')
 
@@ -16,7 +14,6 @@ function NickNameForm(props) {
     }
 
     const handleNickNameSubmit = event => {
-        // alert(nickName)
         event.preventDefault()
         if(nickName){
             history.push('/dashboard')
@@ -24,26 +21,30 @@ function NickNameForm(props) {
     }
 
     return (
-        <form onSubmit={handleNickNameSubmit}>
-            <FaInfoCircle className="circleIcon" />
-        
-            <h3 className="detectNumber">We have detected your phone number</h3>
-        
-            <h2 className="coverNum">
-                <span className="postNum">+234</span>
-                <span className="Number">803 323 34</span>
-            </h2>
+        <div className="nickname-form-holder">
+            <form onSubmit={handleNickNameSubmit}>
+                <FaInfoCircle className="circle-icon" />
             
-            <label htmlFor="nickName"><h3>Enter your Nickname</h3></label>
-            <input type="text" id="nickName" name="nickName" value={nickName} onChange={handleNickNameChange} placeholder="NoahAdams" className="get-nick" />
-        
-            <div>
-                <button className="proceed" type="submit">
-                    Proceed
-                    <FaChevronRight className="fachevron" />
-                </button>
-            </div>
-    </form>
+                <h3 className="detectNumber">We have detected your phone number</h3>
+            
+                <h2 className="coverNum">
+                    <span className="post-number">+234</span>
+                    <span className="number">803 323 2334</span>
+                </h2>
+                
+                <div className="nick-name">
+                    <label htmlFor="nickName"><h3>Enter your Nickname</h3></label>
+                    <input type="text" id="nickName" name="nickName" value={nickName} onChange={handleNickNameChange} placeholder="NoahAdams" className="get-nick" />
+                </div>
+
+                <div className="proceed-con">
+                    <button className="proceed" type="submit">
+                        Proceed
+                        <FaChevronRight className="fachevron" />
+                    </button>
+                </div>
+            </form>
+        </div>
     )
 }
 

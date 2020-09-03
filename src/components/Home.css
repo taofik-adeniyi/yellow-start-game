@@ -230,6 +230,18 @@
     font-size: 18px;
     padding: 8px 15px;
 }
+.modal-class {
+    border: none;
+    margin: 10% auto;
+    padding: 20px;
+    width: 40%;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;
+}
+.modal-class:focus {
+    outline: none;
+}
 @media screen and (max-width: 450px) {
     
 }

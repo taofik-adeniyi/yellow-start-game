@@ -1,0 +1,37 @@
+.wrong-icon {
+    color: red;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+}
+.wrong {
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+    padding-top: 10px;
+}
+.wrong-text {
+    font-size: 24px;
+    padding: 20px;
+}
+.display-correct {
+    color: green;
+    font-size: 20px;
+    padding: 10px;
+}
+.awoof {
+    color: red;
+    font-size: 13px;
+    margin-top: 40px;
+}
+.next-trial-con {
+    margin-top: 20px;
+}
+.quiz-question-next {
+    outline: none;
+    border: none;
+    background-color: #FFCC00;
+    border-radius: 5px;
+    padding: 10px;
+    width: 22%;
+}

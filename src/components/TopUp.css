@@ -1,0 +1,65 @@
+.cancel {
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.database {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+}
+.db-text {
+    padding: 20px;
+    font-weight: bold;
+}
+.top-up {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.topup-modal-class {
+    border: none;
+    margin: 10% auto;
+    padding: 20px;
+    width: 30%;
+    background-color: #ccc;
+    text-align: center;
+    border-radius: 20px;
+}
+.topup-modal-class:focus {
+    outline: none;
+}
+.data-bundle {
+    width: 100px;
+    background-color: #FFCC00;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 0 0 70px;
+}
+.bank-cards {
+    width: 100px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    position: absolute;
+    margin: -125px 0 0 230px;
+    font-weight: bold;
+}
+/* .all-cards {
+    justify-content: space-between;
+} */
+.cards {
+    width: 30px;
+    height: 30px;
+    color: #FFCC00;
+    margin: 10px 0 0 5px;
+}
+.bank-text {
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.space-bottom {
+    margin-bottom: 30px;
+}

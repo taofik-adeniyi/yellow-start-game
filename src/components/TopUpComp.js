@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaChevronRight } from "react-icons/fa";
 import Modal from 'react-modal'
 import TopUp from './TopUp'
+import './TopUp.css'
 
 function TopUpComp() {
 
@@ -13,7 +14,7 @@ function TopUpComp() {
             <Modal 
                 isOpen={modalOpen}  
                 onRequestClose={() => setModalOpen(false)}
-                className="modal"
+                className="topup-modal-class"
             >
                 <TopUp />
             </Modal>

@@ -11,6 +11,75 @@
     background-color: #FFCC00;
     width: 100%;
 }
+.modal {
+    margin: 13% auto;
+    width: 550px;
+    position: relative;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    border: solid 1px transparent;
+}
+.modal-class {
+    border: none;
+    margin: 10% auto;
+    padding: 20px;
+    width: 40%;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 20px;
+}
+.modal-class:focus {
+    outline: none;
+}
+.nickname-form-holder {
+    font-family: 'Poppins', sans-serif;
+}
+.circle-icon {
+    height: 40px;
+    width: 40px;
+    color: #FFCC00;
+}
+.detect-number {
+    font-family: 'Poppins', sans-serif;
+}
+.cover-number {
+    letter-spacing: 2px;
+}
+.post-number {
+    color: #ccc;
+}
+.number {
+    color: #FFCC00;
+}
+.nick-name {
+    margin: 35px 0 10px 0;
+}
+.get-nick {
+    width: 60%;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #000000;
+}
+.proceed-con {
+    margin-top: 20px;
+}
+.proceed {
+    height: 40px;
+    width: 160px;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px transparent;
+    background-color: #FFCC00;
+    outline: none;
+    font-weight: bold;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
 @media (max-width: 450px) {
     .start-body {
         font-size: 10px;
@@ -75,16 +144,7 @@
     height: 140px;
     margin-top: -110px;
 }
-.modal {
-    margin: 13% auto;
-    width: 550px;
-    position: relative;
-    background-color: #FFFFFF;
-    text-align: center;
-    border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-    border: solid 1px transparent;
-}
+
 @media (max-width: 450px) {
     .modal {
         width: 80%;
@@ -92,45 +152,4 @@
         padding: 20px;
         text-align: center;
     }
-}
-.circle-icon {
-    margin: 20px auto 10px auto;
-    height: 40px;
-    width: 40px;
-    color: #FFCC00;
-}
-.detect-number {
-    font-family: 'Poppins', sans-serif;
-}
-.cover-number {
-    letter-spacing: 2px;
-}
-.post-number {
-    color: #ccc;
-}
-.number {
-    color: #FFCC00;
-}
-.get-nick {
-    width: 300px;
-    height: 35px;
-    text-align: center;
-    margin: 0 0 20px 0;
-    font-weight: bold;
-    font-size: 18px;
-    border: 1px solid #000000;
-}
-.proceed {
-    margin: 0 0 20px 0;
-    height: 40px;
-    width: 160px;
-    text-align: center;
-    padding: 10px;
-    border: solid 1px transparent;
-    background-color: #FFCC00;
-    outline: none;
-    font-weight: bold;
-    border-radius: 20px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
 }

@@ -12,6 +12,7 @@ import BoostPoints from './BoostPoints'
 import SwitchComp from './SwitchComp'
 import { Link } from 'react-router-dom'
 import TopUpComp from './TopUpComp'
+import './QuizQuestion.css'
 
 function Home() {
 
@@ -154,7 +155,14 @@ function Home() {
                     <Modal 
                     isOpen={quizModalOpen}  
                     onRequestClose={() => setQuizModalOpen(false)}
-                    className="modal"
+                    className="quiz-question-modal-class"
+                    style={
+                        {
+                            overlay: {
+                                backgroundColor: 'grey'
+                            }
+                        }
+                    }
                     >
                   <Quiz />
                 </Modal>
